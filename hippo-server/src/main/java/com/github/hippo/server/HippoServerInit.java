@@ -70,7 +70,7 @@ public class HippoServerInit implements ApplicationContextAware, InitializingBea
         String name = class1.getName();
         if (implObjectMap.containsKey(simpleName)) {
           throw new HippoServiceException(
-              "接口[" + simpleName + "]已存在。[" + name + "],hippo不支持不同包名但接口名相同,请重命名当前接口名");
+              "接口[" + simpleName + "]已存。[" + name + "],hippo不支持不同包名但接口名相同,请重命名当前接口名");
         }
         implObjectMap.put(simpleName, serviceBean);
         implObjectMap.put(name, serviceBean);
